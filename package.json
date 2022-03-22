@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "leader-line": "^1.0.7",
     "swup": "^2.0.14"
   }
 }

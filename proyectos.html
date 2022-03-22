@@ -6,6 +6,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="node_modules/leader-line/leader-line.min.js"></script>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
     
@@ -37,49 +38,44 @@
 
     <main id="swup" class="transition-fade">
 
-        <div class="cover_index center-all">
-            <div class="content_index evenly-all" style="max-width: 85%;">
-                <div id="title_index">
-                    <h1 class="white">Los proyectos de</h1>
-                    <img class="logo_velta" src="Images/Proyectos/Velta.svg" alt="">
-                </div>
-
-                <div id="indice_index">
-                    <h2 style="padding-bottom: 1em;"><a class="h2 white section-link" href="#inversiones-actuales">Inversiones actuales</a></h2>
-                    <h2 style="padding-bottom: 1em;"><a class="h2 white section-link" href="#compromisos-q2">Compromisos Q2 2022</a></h2>
-                    <h2 ><a class="h2 white section-link" href="#corporativo">Corporativo</a></h2>
-                    <h2></h2>
-                  
-                    
-                    <div style="padding-left:2em">
-                        <h3><a class="h3 white py-1 section-link" href="#brazo-financiero">Brazo financiero</a></h3>
-                        <h3><a class="h3 white py-1 section-link" href="#construccion-desarrollo">Construcción<br> y desarrollo inmobiliario</a></h3>
-                        <h3><a class="h3 white py-1 section-link" href="#ingenieria-tecnologia">Ingeniería y tecnología</a></h3>
-                        <h3><a class="h3 white py-1 section-link" href="#logistica">Logística</a></h3>
-                        <h3><a class="h3 white py-1 section-link" href="#social-deportivo-cultural">Social, deportivo y cultural</a></h3>
-                        
-                    </div>
-                </div>
-
-                <section id="inversiones-actuales">
-                    <h2 class="white">Inversiones actuales</h2>
-                    
-                    <div class="wrapper">
-                        <div class="donut">
-                            <div class="donut_segment1"></div>
-                            <div class="donut_segment2"></div>
-                            <div class="donut_segment3"></div>
-                            <div class="donut_segment4"></div>
-                            <div class="donut_segment5"></div>
-                            <div class="inner-pie"></div>
-                            <!-- <div class="donut_segment_center"></div> -->
-                            
-    
+        <div class="cover_proyectos center-all">
+            <!-- <div class="container-fluid d-flex" style="min-height: 100%;"> -->
+                <div class="row row_cover_proyectos">
+                    <div class="col-12 col-md-6 center-all text-center">
+                        <div id="title_index">
+                            <h1 class="white">Nuestros proyectos</h1>
+                            <img class="logo_velta" src="Images/Proyectos/Velta.svg" alt="">
                         </div>
                     </div>
-                    
-                   
-                </section>
+                    <div class="col-12 col-md-6">
+                        <section id="inversiones-actuales" class="center-all">
+                            <!-- <h2 class="white">Inversiones actuales</h2> -->
+                            
+                            <div class="wrapper center-all" id="wrapper_donut">
+                                <div class="donut">
+                                    <div class="donut_segment1" id="donut_segment1"></div>
+                                    <div class="donut_segment2" id="donut_segment2"></div>
+                                    <div class="donut_segment3" id="donut_segment3"></div>
+                                    <div class="donut_segment4" id="donut_segment4"></div>
+                                    <div class="donut_segment5" id="donut_segment5"></div>
+                                    <div class="inner-pie"></div>
+                                    <!-- <div class="donut_segment_center"></div> -->
+                                </div>
+                                <p class="white parr_small parr_donut" id="description_segment1">Sistema SCADA nuevo Aeropuerto Santa Lucía.</p>
+                                <p class="white parr_small parr_donut" id="description_segment2">Sistemas de control electrónico metro CDMX.</p>
+                                <p class="white parr_small parr_donut" id="description_segment3">Sistema de mando y control Fuerza Aérea de México.</p>
+                                <p class="white parr_small parr_donut" id="description_segment4">Sistema de automatización en invernaderos de alta tecnología</p>
+                                <!-- <p class="white parr_small parr_donut" id="description_segment5">Tren Coahuilteca. PNS</p> -->
+                            </div>
+                            
+                           
+                        </section>
+                    </div>
+                </div>
+            <!-- </div> -->
+            <div class="content_index evenly-all" style="max-width: 85%;">
+                
+               
             </div>
            
         </div>
