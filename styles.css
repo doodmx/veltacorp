@@ -613,6 +613,9 @@ main{
 .navbar-collapse{
     background-color: #000;
 }
+.navbar_dark-blue{
+    background-color: #101820!important;
+}
 .navbar-toggler{
     border: none!important;
 }
@@ -681,6 +684,8 @@ p, .p{
     min-height: 390px;
     background-color: #000;
 }
+
+
 
 .section_white_transporte{
     width: 100%;
@@ -790,7 +795,10 @@ html.is-animating .transition-diagonal-tb{
 /*----------------------LG and bigger---------------------*/
 @media (min-width:992px){
     .navbar{
-        background-color: #000;
+        background-color: transparent;
+    }
+    .navbar-collapse{
+        background-color: transparent;
     }
 }
 

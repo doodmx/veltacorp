@@ -1,5 +1,17 @@
 const swup = new Swup()
 
+// Color-changing navbar on scroll
+$(function () {
+    $(document).scroll(function () {
+      // var $nav = document.getElementById("navbar-transparent")
+      var $nav = $(".navbar");
+      $nav.toggleClass('navbar_dark-blue', $(this).scrollTop() > 700);
+      $nav.toggleClass('navbar-light', $(this).scrollTop() > 700);
+      $nav.toggleClass('navbar-dark', $(this).scrollTop() < 700);
+      // $nav.classList.add('navbar-light',$(this).scrollTop() > $nav.height());
+      // $nav.classList.remove('navbar-dark',$(this).scrollTop() > $nav.height());
+    });
+  });
 
 
 var startElement1 = document.getElementById('donut_segment1'),
