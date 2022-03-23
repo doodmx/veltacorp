@@ -29,7 +29,7 @@ endElement4 = document.getElementById('description_segment4'),
 startElement5 = document.getElementById('donut_segment5'),
 endElement5 = document.getElementById('description_segment5');
 
-var line1 = new LeaderLine(
+var lineGreen = new LeaderLine(
     LeaderLine.pointAnchor(
         startElement1, {
             x: 155,
@@ -42,11 +42,12 @@ var line1 = new LeaderLine(
         path: 'grid',
         endSocket: 'bottom',
         endPlug: 'behind',
-        size: 1
+        size: 1,
+        hide: true
     }
 );
 
-var line2 = new LeaderLine(
+var lineRed = new LeaderLine(
     LeaderLine.pointAnchor(
         startElement2, {
             x: 510,
@@ -59,11 +60,12 @@ var line2 = new LeaderLine(
         path: 'grid',
         endSocket: 'bottom',
         endPlug:'behind',
-        size: 1
+        size: 1,
+        hide: true
     }
 );
 
-var line3 = new LeaderLine(
+var lineBlue = new LeaderLine(
     LeaderLine.pointAnchor(
         startElement3, {
             x: 570,
@@ -77,11 +79,12 @@ var line3 = new LeaderLine(
         startSocket: 'right',
         endSocket: 'top',
         endPlug:'behind',
-        size: 1
+        size: 1,
+        hide: true
     }
 );
 
-var line4 = new LeaderLine(
+var lineOrange = new LeaderLine(
     LeaderLine.pointAnchor(
         startElement4, {
             x: 352,
@@ -95,7 +98,107 @@ var line4 = new LeaderLine(
         startSocket: 'bottom',
         endSocket: 'top',
         endPlug:'behind',
-        size: 1
+        size: 1,
+        hide: true
     }
 );
+
+var linePurple = new LeaderLine(
+    LeaderLine.pointAnchor(
+        startElement4, {
+            x: 100,
+            y: 450
+        }
+    ),
+    endElement5,
+    {
+        color: '#ffffff',
+        path: 'grid',
+        startSocket: 'left',
+        endSocket: 'top',
+        endPlug:'behind',
+        size: 1,
+        hide: true
+    }
+);
+
+
+
+
+// var line4 = new LeaderLine(LeaderLine.mouseHoverAnchor(startElement3, 'draw'), endElement1);
+// line4.setOptions({
+//     x: 555,
+//     y:125,
+//     color: '#ffffff',
+//     path: 'grid',
+//     startSocket: 'top',
+//     endSocket: 'bottom',
+//     endPlug:'behind',
+//     size: 1,
+   
+// //         hide: true
+// });
+
+// var line5 = new LeaderLine(LeaderLine.mouseHoverAnchor(startElement4, 'draw'), endElement5);
+// line5.setOptions({
+    
+//     color: '#ffffff',
+//     path: 'grid',
+//     startSocket: 'left',
+//     endSocket: 'top',
+//     endPlug:'behind',
+//     size: 1,
+   
+// //         hide: true
+// });
+
+
+
+// var line5 = new LeaderLine(
+//     LeaderLine.mouseHoverAnchor(startElement5, 'draw', {
+//       animOptions: {
+//         duration: 1000
+//       },
+//       x: 10,
+//       y: 350
+//     }),
+//     endElement5,
+//     {
+//         color: '#ffffff',
+//         path: 'grid',
+//         startSocket: 'left',
+//         endSocket: 'top',
+//         endPlug:'behind',
+//         size: 1,
+//         hide: true
+//     }
+//   );
+
+//   var line5 = new LeaderLine(
+//     LeaderLine.mouseHoverAnchor(startElement5, 'draw', {
+//       animOptions: {
+//         duration: 1000
+//       },
+//       x: 310,
+//       y: 650
+      
+//     }),
+//     endElement5,
+//     {
+//         color: '#ffffff',
+//         path: 'grid',
+//         startSocket: 'left',
+//         endSocket: 'top',
+//         endPlug:'behind',
+//         size: 1,
+//         hide: true
+//     }
+//   );
+
+startElement3.addEventListener('mouseover', function(){ lineGreen.show(); });
+startElement5.addEventListener('mouseover', function(){ lineRed.show(); });
+startElement1.addEventListener('mouseover', function(){ lineBlue.show(); });
+startElement2.addEventListener('mouseover', function(){ lineOrange.show(); });
+startElement4.addEventListener('mouseover', function(){ linePurple.show(); });
+ 
 

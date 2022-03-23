@@ -214,12 +214,12 @@ a{
 #description_segment2{
     position: relative;
     top: -633px;
-    left: 294px;
+    left: 199px;
 }
 #description_segment3{
     position: relative;
-    top: -179px;
-    left: 295px;
+    top: -160px;
+    left: 239px;
 }
 #description_segment4{
     position: relative;
@@ -228,14 +228,17 @@ a{
 }
 #description_segment5{
     position: relative;
-    top: -502px;
-    left: 249px;
+    /* top: -300px;
+    left: -340px; */
+    top: -288px;
+    left: -340px;
+;
 }
 
 .donut{
     --g:10px; /* The gap between shapes*/
     --s:102px; /* the size*/
-
+    right: 50px;
     height: 510px;
     width: 510px;
     position:relative;
@@ -248,7 +251,7 @@ a{
     left:0;
     right:0;
     bottom:0;
-    border:var(--s) solid var(--c,red);
+    /* border:var(--s) solid var(--c,red); */
     border-radius:50%;
     clip-path:polygon(
     calc(50% + var(--g)/2) 50%, 
@@ -258,25 +261,95 @@ a{
     50% calc(50% - var(--g)/2));
   }
 
+  .donut_segment{
+      background-size: contain;
+      background-position: top;
+      overflow: hidden;
+  }
+
   .donut_segment1 {
     transform:rotate(72deg);
     --c:blue;
+    background-image: url('Images/Proyectos/Avion.jpg');
   }
+  .donut_segment1::before {
+    transform: rotate(-72deg);
+    content: "";
+    position: absolute;
+    width: 187%;
+    height: 58%;
+    top: -16%;
+    left: -50%;
+    z-index: -1;
+    background: url('Images/Proyectos/Lechuga.jpeg');
+    background-size: contain;
+    background-position: right;
+  }
+
   .donut_segment2 {
     transform:rotate(144deg);
     --c:orange;
+    background-image: url('Images/Proyectos/Lechuga.jpeg');
+  }
+  .donut_segment2::before {
+    transform: rotate(-144deg);
+    content: "";
+    position: absolute;
+    width: 187%;
+    height: 58%;
+    top: -16%;
+    left: -50%;
+    z-index: -1;
+    background: url('Images/Proyectos/Lechuga.jpeg');
+    background-size: contain;
+    background-position: right;
   }
   .donut_segment2:hover{
       --c:brown;
   }
+
   .donut_segment3 {
     transform:rotate(-72deg);
     --c:green;
+    background-image: url('Images/Proyectos/Sistema.jpg');
   }
+  .donut_segment3::before {
+    transform:rotate(72deg);
+    content: "";
+    position: absolute;
+    width: 206%;
+    height: 58%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: url('Images/Proyectos/Sistema.jpg');
+    background-size: contain;
+    background-position: unset;
+  }
+
   .donut_segment4 {
     transform:rotate(-144deg);
     --c:purple;
+    background-image: url('Images/Proyectos/Tren.jpeg');
   }
+  .donut_segment4::before {
+    transform:rotate(144deg);
+    content: "";
+    position: absolute;
+    width: 206%;
+    height: 58%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: url('Images/Proyectos/Tren.jpg');
+    background-size: contain;
+    background-position: unset;
+  }
+
+  .donut_segment5 {
+    background-image: url('Images/Proyectos/Metro.jpeg');
+  }
+  
   .donut_segment_center{
     position: absolute;
     width: 7em;
@@ -814,6 +887,9 @@ html.is-animating .transition-diagonal-tb{
         align-items: center;
         -webkit-align-items: center;
     }
+    #col_donut_productos{
+        padding-top: 5em;
+    }
     #col_dummy_contacto{
         display: none;
     }
@@ -838,13 +914,14 @@ html.is-animating .transition-diagonal-tb{
         left: 101px;
     }
     #description_segment4{
-        top: -503px;
-        left: 92px;
+        top: -89px;
+        left: -45px;
     }
     #description_segment5{
-        top: -503px;
-        left: 92px;
+        top: -205px;
+        left: -100px;
     }
+    
     .donut{
         --g: 8px;
         --s: 84px;
@@ -886,6 +963,7 @@ html.is-animating .transition-diagonal-tb{
     .col_content_title_transporte{
         padding-bottom: 2em;
     }
+
     .col_index{
         min-height: 50vh;
     }
@@ -939,8 +1017,8 @@ html.is-animating .transition-diagonal-tb{
         left: -45px;
     }
     #description_segment5{
-        top: -503px;
-        left: 92px;
+        top: -205px;
+    left: -100px;
     }
     .donut{
         --g: 8px;
