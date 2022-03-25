@@ -6,8 +6,11 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="node_modules/leader-line/leader-line.min.js"></script>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <!--Extra font-->
+    <link rel="stylesheet" href="https://use.typekit.net/gcm8xmv.css">
     
     <title>Inicio | Velta </title>
 
@@ -15,74 +18,81 @@
 
 </head>
 <body style="background-color: #101820;">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="/index.html">
-            <img src="/Images/Proyectos/Icono.svg" class="icono_velta" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggled" aria-controls="navbarToggled" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" toggle="collapse" data-target=".navbar-collapse" id="navbarToggled">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/proyectos.html">Proyectos</a></li>
-                <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        
-    </nav>
+    
 
 
 
     <main id="swup" class="transition-fade">
 
-        <div class="cover_index center-all">
-            <div class="content_index evenly-all" style="max-width: 85%;">
-                <div>
-                    <h1 class="white">Los proyectos de</h1>
-                    <img class="logo_velta" src="Images/Proyectos/Velta.svg" alt="">
-                </div>
+        <nav class="navbar navbar_dark-blue fixed-top navbar-expand-lg navbar-dark" onclick="deleteLines()">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/Images/Proyectos/Icono.svg" class="icono_velta" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggled" aria-controls="navbarToggled" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" toggle="collapse" data-target=".navbar-collapse" id="navbarToggled">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Currículum</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/proyectos.html">Proyectos actuales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/corporativo.html">Nuestro corporativo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            
+        </nav>
 
-                <div>
-                    <a href="#inversiones-actuales"></a>
-                    <a class="h2 white py-1 section-link" href="#inversiones-actuales">Inversiones actuales</a>
-                    <a class="h2 white py-1 section-link" href="#compromisos-q2">Compromisos Q2 2022</a>
-                    <a class="h2 white py-1 section-link" href="#corporativo">Corporativo</a>
-                    <div style="padding-left:2em">
-                        <a class="h3 white py-1 section-link" href="#inversiones-actuales">Inversiones actuales</a>
-                        <a class="h3 white py-1 section-link" href="#compromisos-q2">Compromisos Q2 2022</a>
-                        <a class="h3 white py-1 section-link" href="#corporativo">Corporativo</a>
-                    </div>
-                </div>
+        <div class="cover_index center-all">
+
+            <video autoplay muted loop class="" id="video_Index">
+                <source src="Images/Index/Planeta.mp4" type="video/mp4">
+            </video>
+
+            <div class="content_index evenly-all" style="max-width: 85%;">
+            
+
+                
             </div>
            
         </div>
+
+        <section class="section_path_index">
+            <div class="wrapper_content_index">
+                <div class="step_path" id="step_path_earth">
+                    <img class="img_path_index" id="img_path_index_earth" src="Images/Index/earth-2021-08-30-09-19-14-utc@2x.png" alt="earth" >
+                    <div class="text-wrapper_path">
+                        <h2 class="white h2-big">¿Por qué existimos?</h2>
+                        <p class="white">Buscamos la mejor versión de nuestro planeta y especie, guiados por
+                             17 objetivos de la agenda 2030 que marca Naciones Unidas.</p>
+                    </div>
+                </div>
+                <div class="step_path" id="step_path_hands">
+                    <img class="img_path_index" id="img_path_index_hands" src="Images/Index/handshake-business-men-concept-2021-08-26-23-57-58-utc@2x.png" alt="handshake" >
+                    <div class="text-wrapper_path" id="text-wrapper_path_hands">
+                        <h2 class="white h2-big">¿Cómo lo logramos?</h2>
+                        <p class="white">Con nuestras relaciones, empresas, fondos, garantías, tecnología,
+                             infraestructura, alianzas, socios y amigos que nos permiten desarrollar
+                              proyectos exitosos de alto impacto.</p>
+                    </div>
+                </div>
+                <div class="step_path" id="step_path_people">
+                    <img class="img_path_index" id="img_path_index_people" src="Images/Index/divers-group-of-people-is-working-at-the-office-2021-09-03-23-34-39-utc@2x.png" alt="earth" >
+                    <div class="text-wrapper_path">
+                        <h2 class="white h2-big">¿Qué somos?</h2>
+                        <p class="white">Una comunidad empresarial humana, innovadora, tecnológica, prestigiosa y sostenible.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
 
         <div id="inversiones-actuales">
             
         </div>
 
-        <div class="container-fluid">
-            <div class="row row_index">
-                <div class="col-12 col-md-4 col_index" id="col_transporte_ejecutivo">
-                    <a class="link link_card link_card_ejecutivo" href="/transporte-ejecutivo.html">
-                        <h3 class="white" style="text-align: end; padding: 1em 1em 0 0">Transporte<br> Ejecutivo</h3>
-                    </a>
-                    
-                </div>
-                <div class="col-12 col-md-4 col_index" id="col_transporte_aereo">
-                    <a class="link link_card link_card_aereo" href="/transporte-aereo.html">
-                        <h3 class="white" style="padding: 0 0 1em 1em">Transporte<br>Aéreo</h3>
-                    </a>
-                </div>
-                <div class="col-12 col-md-4 col_index" id="col_transporte_industrial">
-                    <a class="link link_card link_card_industrial" href="/transporte-aereo.html">
-                        <h3 class="white" style="text-align: end; padding: 1em 1em 0 0">Transporte<br>Industrial</h3>
-                    </a>
-                </div>
-            </div>
-        </div>
+        
         
 
     </main>
@@ -145,8 +155,10 @@
         </div>
     </section>
 
-
+    <script>drawLinesIndex()</script>
 </body>
+
+
 
 <!--Bootstrap 5.1.3-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

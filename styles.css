@@ -70,6 +70,27 @@ a{
     width: 205px;
     height: auto;
 }
+.img_path_index{
+    width: 400px;
+}
+
+#img_path_index_earth{
+    margin-right: 2em;
+    float: left;
+}
+#img_path_index_hands{
+    margin-left: 2em;
+    float: right;
+}
+#img_path_index_people{
+    margin-right: 2em;
+    float: left;
+}
+
+.img_sm-icon{
+    width: 27px;
+    filter: invert(1);
+}
 
 .center-all{
     display: flex;
@@ -163,7 +184,7 @@ a{
 }
 .cover_proyectos{
     background-color: #101820;
-    min-height: 120vh;
+    min-height: 100vh;
 }
 
 .cover{
@@ -419,15 +440,20 @@ a{
 
 .footer{
     color: #B8C1D1;
-    padding: 6em 0 8em 0;
+    padding: 3em 0 3em 0;
 }
 
 .footer-col{
     width: 12.5vw;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
     /* padding: 0; */
   }
   .footer-row{
     padding-top: 1em;
+    width: 99%;
+    padding-left: 14em;
   }
   .footer-section{
     display: flex;
@@ -487,6 +513,10 @@ h2, .h2{
     font-family: 'Aktiv-Grotesk_Ex_Bold';
 }
 
+.h2-big{
+    font-size: 28px!important;
+}
+
 h3, .h3{
     font-size: 16px!important;
     font-family: 'Telegraf_Regular';
@@ -509,6 +539,11 @@ h3, .h3{
 
 .icono_velta{
     padding-left: 1em;
+}
+
+.img_path_index{
+    shape-outside: circle(50%);
+    -webkit-clip-path: circle(50%);
 }
 
 #indice_index{
@@ -799,13 +834,38 @@ p, .p{
     transition: all 0.5s linear;
 }
 
+.section_path_index{
+    background-color:#101820 ;
+}
 
+.step_path{
+    max-width: 700px;
+    display: flow-root
+}
+#step_path_earth{
+    padding-left: 6em;
+}
+#step_path_hands{
+    margin-left: auto;
+    padding-right: 6em;
+}
+#step_path_people{
+    padding-left: 6em;
+}
 
 .text-center{
     text-align: center;
     
 }
 .text-end{
+    text-align: end;
+}
+
+.text-wrapper_path{
+    padding-top: 13%;
+}
+
+#text-wrapper_path_hands{
     text-align: end;
 }
 
@@ -885,6 +945,17 @@ html.is-animating .transition-diagonal-tb{
     transform: translateX(-50%) translateY(-50%);
 }
 
+#video_Index{
+    height: 100vh;
+    /* position: fixed; */
+    right: 0;
+    bottom: 0;
+    /* min-width: 100%; */
+    /* min-height: 100%; */
+    width: -webkit-fill-available;
+    object-fit: cover;
+}
+
 .visuallyhidden{
     opacity: 0;
 }
@@ -894,7 +965,11 @@ html.is-animating .transition-diagonal-tb{
     color: #EDF1F9;
 }
 #wrapper_donut{
-    padding-top: 3em;
+    padding-top: 13em;
+}
+
+.wrapper_content_index{
+    transform: translate(0px, -57px);
 }
 
 /*----------------------LG and bigger---------------------*/
@@ -1022,8 +1097,9 @@ html.is-animating .transition-diagonal-tb{
     }
     
     .cover_index{
-        height: 95vh;
+        min-height: 95vh;
         text-align: center;
+        background-image: url('Images/Index/Planeta.mp4');
         /* display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1066,6 +1142,15 @@ html.is-animating .transition-diagonal-tb{
     .footer-col{
         padding-bottom: 1em;
     }
+    .footer-row{
+        width: 89%;
+        padding-left: 0;
+    }
+
+    .img_path_index{
+        width: 241px;
+        
+    }
     
 
     .logo_index{
@@ -1074,6 +1159,17 @@ html.is-animating .transition-diagonal-tb{
 
     .parr_cover_index{
         padding-bottom: 2em;
+    }
+
+    #step_path_earth{
+        padding-left: 2em;
+    }
+    #step_path_hands{
+        margin-left: auto;
+        padding-right: 2em;
+    }
+    #step_path_people{
+        padding-left: 2em;
     }
 
     

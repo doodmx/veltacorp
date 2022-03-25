@@ -1,4 +1,4 @@
-const swup = new Swup()
+// const swup = new Swup()
 
 // Color-changing navbar on scroll
 // $(function () {
@@ -13,27 +13,58 @@ const swup = new Swup()
 //     });
 //   });
 
+async function drawLinesIndex(){
+    //Var assignment for path elements in index
+    var imgEarth = document.getElementById('img_path_index_earth'),
+    imgHands = document.getElementById('img_path_index_hands'),
+    imgPeople = document.getElementById('img_path_index_people');
 
-var startElement1 = document.getElementById('donut_segment1'),
-endElement1 = document.getElementById('description_segment1'),
+        //Lines for path elements
+    var linePath1 = new LeaderLine(
+        imgEarth,
+        imgHands,
+        {
+            color: '#C47C5A',
+            path: 'fluid',
+            startSocket: 'bottom',
+            endSocket: 'top',
+            endPlug: 'behind',
+            size: 3
+        }
+    );
+}
 
-startElement2 = document.getElementById('donut_segment2'),
-endElement2 = document.getElementById('description_segment2'),
+async function drawLinesProyectos(){
+    // Var assignment for donut elements in products
+    var startElement1 = document.getElementById('donut_segment1'),
+    endElement1 = document.getElementById('description_segment1'),
 
-startElement3 = document.getElementById('donut_segment3'),
-endElement3 = document.getElementById('description_segment3'),
+    startElement2 = document.getElementById('donut_segment2'),
+    endElement2 = document.getElementById('description_segment2'),
 
-startElement4 = document.getElementById('donut_segment4'),
-endElement4 = document.getElementById('description_segment4'),
+    startElement3 = document.getElementById('donut_segment3'),
+    endElement3 = document.getElementById('description_segment3'),
 
-startElement5 = document.getElementById('donut_segment5'),
-endElement5 = document.getElementById('description_segment5'),
+    startElement4 = document.getElementById('donut_segment4'),
+    endElement4 = document.getElementById('description_segment4'),
 
-innerElement = document.getElementById('inner-pie');
-innerElementText = document.getElementById('parr_inner-pie');
+    startElement5 = document.getElementById('donut_segment5'),
+    endElement5 = document.getElementById('description_segment5'),
+
+    innerElement = document.getElementById('inner-pie');
+    innerElementText = document.getElementById('parr_inner-pie');
+
+    
+}
 
 
 
+
+
+
+
+
+//Lines for donut elements
 var lineGreen = new LeaderLine(
     LeaderLine.pointAnchor(
         startElement1, {
@@ -130,75 +161,9 @@ var linePurple = new LeaderLine(
 
 
 
-// var line4 = new LeaderLine(LeaderLine.mouseHoverAnchor(startElement3, 'draw'), endElement1);
-// line4.setOptions({
-//     x: 555,
-//     y:125,
-//     color: '#ffffff',
-//     path: 'grid',
-//     startSocket: 'top',
-//     endSocket: 'bottom',
-//     endPlug:'behind',
-//     size: 1,
-   
-// //         hide: true
-// });
-
-// var line5 = new LeaderLine(LeaderLine.mouseHoverAnchor(startElement4, 'draw'), endElement5);
-// line5.setOptions({
-    
-//     color: '#ffffff',
-//     path: 'grid',
-//     startSocket: 'left',
-//     endSocket: 'top',
-//     endPlug:'behind',
-//     size: 1,
-   
-// //         hide: true
-// });
 
 
 
-// var line5 = new LeaderLine(
-//     LeaderLine.mouseHoverAnchor(startElement5, 'draw', {
-//       animOptions: {
-//         duration: 1000
-//       },
-//       x: 10,
-//       y: 350
-//     }),
-//     endElement5,
-//     {
-//         color: '#ffffff',
-//         path: 'grid',
-//         startSocket: 'left',
-//         endSocket: 'top',
-//         endPlug:'behind',
-//         size: 1,
-//         hide: true
-//     }
-//   );
-
-//   var line5 = new LeaderLine(
-//     LeaderLine.mouseHoverAnchor(startElement5, 'draw', {
-//       animOptions: {
-//         duration: 1000
-//       },
-//       x: 310,
-//       y: 650
-      
-//     }),
-//     endElement5,
-//     {
-//         color: '#ffffff',
-//         path: 'grid',
-//         startSocket: 'left',
-//         endSocket: 'top',
-//         endPlug:'behind',
-//         size: 1,
-//         hide: true
-//     }
-//   );
 
 startElement3.addEventListener('mouseover', function(){ lineGreen.show(); });
 startElement5.addEventListener('mouseover', function(){ lineRed.show(); });
@@ -209,6 +174,18 @@ innerElement.addEventListener('mouseover', function(){
     innerElement.classList.add('opaqued_black');
     innerElementText.classList.remove('hidden');
     document.getElementById('wrapper_donut').style.paddingTop = '5em';
-})
- 
+});
+
+
+async function deleteLines(){
+    lineGreen.remove(); 
+    lineRed.remove(); 
+    lineBlue.remove(); 
+    lineOrange.remove();
+    linePurple.remove();
+}
+// document.addEventListener("DOMContentLoaded", function(){
+// 
+//     //dom is fully loaded, but maybe waiting on images & css files
+// });
 
