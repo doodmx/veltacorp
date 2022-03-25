@@ -1,17 +1,17 @@
 const swup = new Swup()
 
 // Color-changing navbar on scroll
-$(function () {
-    $(document).scroll(function () {
-      // var $nav = document.getElementById("navbar-transparent")
-      var $nav = $(".navbar");
-      $nav.toggleClass('navbar_dark-blue', $(this).scrollTop() > 700);
-      $nav.toggleClass('navbar-light', $(this).scrollTop() > 700);
-      $nav.toggleClass('navbar-dark', $(this).scrollTop() < 700);
-      // $nav.classList.add('navbar-light',$(this).scrollTop() > $nav.height());
-      // $nav.classList.remove('navbar-dark',$(this).scrollTop() > $nav.height());
-    });
-  });
+// $(function () {
+//     $(document).scroll(function () {
+//       // var $nav = document.getElementById("navbar-transparent")
+//       var $nav = $(".navbar");
+//       $nav.toggleClass('navbar_dark-blue', $(this).scrollTop() > 700);
+//       $nav.toggleClass('navbar-light', $(this).scrollTop() > 700);
+//       $nav.toggleClass('navbar-dark', $(this).scrollTop() < 700);
+//       // $nav.classList.add('navbar-light',$(this).scrollTop() > $nav.height());
+//       // $nav.classList.remove('navbar-dark',$(this).scrollTop() > $nav.height());
+//     });
+//   });
 
 
 var startElement1 = document.getElementById('donut_segment1'),
@@ -27,7 +27,12 @@ startElement4 = document.getElementById('donut_segment4'),
 endElement4 = document.getElementById('description_segment4'),
 
 startElement5 = document.getElementById('donut_segment5'),
-endElement5 = document.getElementById('description_segment5');
+endElement5 = document.getElementById('description_segment5'),
+
+innerElement = document.getElementById('inner-pie');
+innerElementText = document.getElementById('parr_inner-pie');
+
+
 
 var lineGreen = new LeaderLine(
     LeaderLine.pointAnchor(
@@ -200,5 +205,10 @@ startElement5.addEventListener('mouseover', function(){ lineRed.show(); });
 startElement1.addEventListener('mouseover', function(){ lineBlue.show(); });
 startElement2.addEventListener('mouseover', function(){ lineOrange.show(); });
 startElement4.addEventListener('mouseover', function(){ linePurple.show(); });
+innerElement.addEventListener('mouseover', function(){
+    innerElement.classList.add('opaqued_black');
+    innerElementText.classList.remove('hidden');
+    document.getElementById('wrapper_donut').style.paddingTop = '5em';
+})
  
 
