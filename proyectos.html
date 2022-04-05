@@ -19,19 +19,16 @@
 </head>
 <body style="background-color: #101820;">
     
+    <nav class="navbar  navbar_dark-blue fixed-top navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="/index.html">
+            <img src="/Images/Proyectos/Icono.svg" class="icono_velta" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggled" aria-controls="navbarToggled" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-
-
-    <main id="swup" class="transition-fade">
-        <nav class="navbar navbar_dark-blue fixed-top navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="/index.html">
-                <img src="/Images/Proyectos/Icono.svg" class="icono_velta" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggled" aria-controls="navbarToggled" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" toggle="collapse" data-target=".navbar-collapse" id="navbarToggled">
+        <div class="collapse navbar-collapse" toggle="collapse" data-target=".navbar-collapse" id="navbarToggled">
+            <div class="change_size">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/index.html">Currículum</a></li>
                     <li class="nav-item"><a class="nav-link" href="/proyectos.html">Proyectos actuales</a></li>
@@ -39,15 +36,19 @@
                     <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
                 </ul>
             </div>
-            
-        </nav>
+        </div>
+    </nav>
+
+
+    <main id="swup" class="transition-fade">
+        
 
         <div class="cover_proyectos center-all">
             <!-- <div class="container-fluid d-flex" style="min-height: 100%;"> -->
                 <div class="row row_cover_proyectos">
                     <div class="col-12 col-lg-6 center-all text-center">
                         <div id="title_index">
-                            <h1 class="white">Nuestros proyectos</h1>
+                            <h1 class="white">Los proyectos de</h1>
                             <img class="logo_velta" src="Images/Proyectos/Velta.svg" alt="">
                         </div>
                     </div>
@@ -87,7 +88,7 @@
            
         </div>
 
-        <div id="compromisos_productos">
+        <section id="section_compromisos">
             <h2 class="white text-center">Compromisos Q2 2022</h2>
             
             <div class="row row_compromisos">
@@ -113,7 +114,7 @@
                 </div>
                
             </div>
-        </div>
+        </section>
 
         
         
@@ -135,10 +136,10 @@
                 <h3 class="h3 white">Proyectos</h3>
                 <ul class="footer-ul ">
                     <li>
-                        <a class="p parr_small section-link" href="index.html">Inversiones actuales</a>
+                        <a class="p parr_small section-link" href="proyectos.html#inversiones-actuales">Inversiones actuales</a>
                     </li>
                     <li>
-                        <a class="p parr_small section-link" href="index.html">Compromisos Q2 2022</a>
+                        <a class="p parr_small section-link" href="proyectos.html#section_compromisos">Compromisos Q2 2022</a>
                     </li>
                 </ul>
             </div>
@@ -183,7 +184,7 @@
         </div>
     </footer>
 
-    <script>drawLinesProyectos()</script>
+    
 
 
 </body>
