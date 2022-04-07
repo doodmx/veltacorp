@@ -274,12 +274,25 @@ if(page=='proyectos.html'){
     startElement3.addEventListener('mouseover', function(){
         lineGreen.show();
         changeProjectsLines(lineGreen);
+        $(endElement1).removeClass("camouflaged_blue");
           
     });
-    startElement5.addEventListener('mouseover', function(){ lineRed.show(); });
-    startElement1.addEventListener('mouseover', function(){ lineBlue.show(); });
-    startElement2.addEventListener('mouseover', function(){ lineOrange.show(); });
-    startElement4.addEventListener('mouseover', function(){ linePurple.show(); });
+    startElement5.addEventListener('mouseover', function(){
+        lineRed.show(); 
+        $(endElement2).removeClass("camouflaged_blue");
+    });
+    startElement1.addEventListener('mouseover', function(){
+        lineBlue.show(); 
+        $(endElement3).removeClass("camouflaged_blue");
+    });
+    startElement2.addEventListener('mouseover', function(){
+        lineOrange.show();
+        $(endElement4).removeClass("camouflaged_blue");
+    });
+    startElement4.addEventListener('mouseover', function(){
+        linePurple.show();
+        $(endElement5).removeClass("camouflaged_blue");
+     });
     innerElement.addEventListener('mouseover', function(){
         innerElement.classList.add('opaqued_black');
         innerElementText.classList.remove('hidden');

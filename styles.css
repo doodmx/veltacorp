@@ -153,6 +153,10 @@ a{
     filter: invert(1);
 }
 
+.camouflaged_blue{
+    color: #101820!important;
+}
+
 .center-all{
     display: flex;
     flex-direction: column;
