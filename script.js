@@ -19,6 +19,10 @@ $(function () {
 function changeNavbarColor(){
     var $nav = $(".navbar");
     $nav.toggleClass('bgd-darkblue');
+    if($nav.hasClass("navbar_white")){
+        $nav.toggleClass('navbar-light');
+        $nav.toggleClass('navbar-dark');
+    }
     // navbar = document.getElementById('navbar');
 
 }
@@ -249,6 +253,7 @@ if(page=='proyectos.html'){
                 startSocket: 'bottom',
                 startSocket:"bottom",
                 endSocket:"top",
+                endPlug:'behind',
                 size: 1,
                 hide: true
             }
