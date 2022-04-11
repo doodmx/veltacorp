@@ -967,6 +967,7 @@ main{
 .navbar_dark-blue{
     background-color: #101820;
 }
+
 .navbar_dark-blue .nav-link{
     color: #F1F0EE!important;
 }
@@ -1299,6 +1300,9 @@ html.is-animating .transition-diagonal-tb{
    #circle_contacto_1{
         left: -100px;
         top: -133px;
+   }
+   .img_map_1{
+    padding-bottom: 3em;
    }
    #wrapper_circle_contacto_2{
     height: 379px;
