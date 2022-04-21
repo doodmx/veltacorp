@@ -4,6 +4,7 @@ html{
 
 body{
     overflow-x: hidden;/* padding-top: 2em; */
+    color: red;
 }
 
 a{
@@ -194,7 +195,6 @@ a{
 .circle{
     border-radius: 50%;
     text-align: center;
-    
 }
 .circle_big{
     width: 531px;
@@ -377,10 +377,7 @@ a{
     background-image: url('Images/Transporte_Aereo/shutterstock_163665074@2x.png');
 }
 
-.cover_contacto{
-    background-image: url('Images/Contacto/front-panel-of-luxury-new-car-in-the-automobile-sa-2021-08-30-04-23-04-utc.png');
-    background-color: #000;
-}
+
 
 .cover_ejecutivo{
     background-image: url('Images/Transporte_Ejecutivo/car-rear-lights-with-glossy-surface-red-backlight-2022-01-03-23-19-47-utc@2x.png');
@@ -987,6 +984,10 @@ main{
 .navbar_white{
     background-color: #F1F0EE;
 
+}
+
+.navbar_white .change_size{
+    background-color: #F1F0EE!important;
 }
 .navbar_white .nav-link{
     color: #863A20!important;
