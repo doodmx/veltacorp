@@ -305,7 +305,8 @@ if(page=='proyectos.html'){
     });
     drawLinesProyectos();
 
-}else if(page=='index.html'){
+}else{
+// }else if(page=='index.html'){
     //Var assignment for path elements in index
     var imgEarth = document.getElementById('img_path_index_earth'),
     imgHands = document.getElementById('img_path_index_hands'),
