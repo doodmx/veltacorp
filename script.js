@@ -34,7 +34,12 @@ if(navbarToggled.classList.contains('show')){
     navbar.classList.add('bgd-darkblue');
 }
 
-$( document ).ready(function() {
+// $( document ).ready(function() {
+
+async function drawLines(){
+
+
+
     console.log( "ready!" );
 
 
@@ -362,7 +367,7 @@ $( document ).ready(function() {
         }
     }
 
-});
+}
 
 
 
