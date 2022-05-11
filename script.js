@@ -443,6 +443,7 @@ async function deleteLines(){
 }
 
 $(window).trigger('resize');
+console.log('Resize happened');
 
 
 // document.addEventListener("DOMContentLoaded", function(){
