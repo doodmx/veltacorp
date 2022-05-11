@@ -444,6 +444,12 @@ async function deleteLines(){
 
 $(window).trigger('resize');
 console.log('Resize happened');
+$(window).trigger('resize');
+console.log('Resize happened2');
+$(window).trigger('resize');
+console.log('Resize happened3');
+$(window).trigger('resize');
+console.log('Resize happened4');
 
 
 // document.addEventListener("DOMContentLoaded", function(){
