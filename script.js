@@ -67,7 +67,7 @@ async function drawLines(){
         startElement5 = document.getElementById('donut_segment5'),
         endElement5 = document.getElementById('description_segment5'),
 
-        innerElement = document.getElementById('inner-pie');
+        innerElement = document.getElementById('inner-pie'),
         innerElementText = document.getElementById('parr_inner-pie');
 
         //Starts, new=small
@@ -245,7 +245,7 @@ async function drawLines(){
                 {
                     color: '#ffffff',
                     path: 'grid',
-                    tartSocket:"bottom",
+                    startSocket:"bottom",
                     endSocket:"top",
                     endPlug:'behind',
                     size: 1,
@@ -260,7 +260,6 @@ async function drawLines(){
                     color: '#ffffff',
                     path: 'grid',
                     startSocket: 'bottom',
-                    startSocket:"bottom",
                     endSocket:"top",
                     endPlug:'behind',
                     size: 1,
@@ -487,4 +486,3 @@ async function deleteLines(){
 // 
 //     //dom is fully loaded, but maybe waiting on images & css files
 // });
-
