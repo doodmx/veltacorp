@@ -3,6 +3,13 @@
     <clipPath id="clip-path">
       <rect id="Rectangle_18" data-name="Rectangle 18" width="496.344" height="418.811" fill="none"/>
     </clipPath>
+    <style type="text/css">
+      @font-face {
+        font-family: "Telegraf";
+        src: url('../../Fonts/Telegraf-Regular.otf'),
+        url('../../Fonts/Telegraf-Light.otf') format("truetype");
+      }
+    </style>
   </defs>
   <g id="Group_116" data-name="Group 116">
     <g id="Group_115" data-name="Group 115" clip-path="url(#clip-path)">

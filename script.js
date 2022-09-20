@@ -283,34 +283,60 @@ async function drawLines(){
                 }
             );
         }
-
-
         startElement3.addEventListener('mouseover', function(){
             lineGreen.show();
             changeProjectsLines(lineGreen);
             $(endElement1).removeClass("camouflaged_blue");
-            
+        });
+        startElement3.addEventListener('mouseout', function(){
+            lineGreen.hide();
+            changeProjectsLines(lineGreen);
+            $(endElement1).toggleClass("camouflaged_blue");
         });
         startElement5.addEventListener('mouseover', function(){
             lineRed.show(); 
             $(endElement2).removeClass("camouflaged_blue");
         });
+        startElement5.addEventListener('mouseout', function(){
+            lineRed.hide(); 
+            $(endElement2).toggleClass("camouflaged_blue");
+        });
         startElement1.addEventListener('mouseover', function(){
             lineBlue.show(); 
             $(endElement3).removeClass("camouflaged_blue");
+        });
+        startElement1.addEventListener('mouseout', function(){
+            lineBlue.hide(); 
+            $(endElement3).toggleClass("camouflaged_blue");
         });
         startElement2.addEventListener('mouseover', function(){
             lineOrange.show();
             $(endElement4).removeClass("camouflaged_blue");
         });
+        startElement2.addEventListener('mouseout', function(){
+            lineOrange.hide();
+            $(endElement4).toggleClass("camouflaged_blue");
+        });
         startElement4.addEventListener('mouseover', function(){
             linePurple.show();
             $(endElement5).removeClass("camouflaged_blue");
+        });
+        startElement4.addEventListener('mouseout', function(){
+            linePurple.hide();
+            $(endElement5).toggleClass("camouflaged_blue");
         });
         innerElement.addEventListener('mouseover', function(){
             innerElement.classList.add('opaqued_black');
             innerElementText.classList.remove('hidden');
             // document.getElementById('wrapper_donut').style.paddingTop = '5em';
+            innerElementText.addEventListener('mouseover', function(){
+                innerElement.classList.add('opaqued_black');
+                innerElementText.classList.remove('hidden');
+            });
+        });
+        innerElement.addEventListener('mouseout', function(){
+            innerElement.classList.remove('opaqued_black');
+            innerElementText.classList.add('hidden');
         });
         drawLinesProyectos();
 
