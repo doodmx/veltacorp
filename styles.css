@@ -804,8 +804,9 @@ h3,
     font-family: 'Telegraf_Regular';
 }
 
+/* esto ocasiona el brinco */
 .hidden {
-    display: none;
+    z-index: -1;
 }
 
 .inner-pie {
@@ -1215,7 +1216,6 @@ main {
 
 .opaqued_black {
     background-color: #000;
-    /* opacity: 0.6; */
     backdrop-filter: blur(30px);
     filter: brightness(0.5);
     transition: 0.5s filter linear;
